@@ -19,3 +19,15 @@
 
 (def url "jdbc:sqlserver://IAML4FLIVE;database=EMFI;user=*****;password=***;encrypt=true;trustServerCertificate=true;loginTimeout=30;")
 (def conn (DriverManager/getConnection url))
+
+(def EMFI_SPEC_WITH_USERNAME
+  {:dbtype                 "mssql"
+   :dbname                 "EMFI"
+   :host                   "IAML4FLIVE"
+   :user                    "***"
+   :password                "***"
+   :trustServerCertificate true
+   :encrypt                   true
+   ;:integratedSecurity     true
+   ;:authenticationScheme   "NativeAuthentication"
+   })
